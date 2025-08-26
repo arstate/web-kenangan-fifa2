@@ -1,21 +1,26 @@
+
 {
   "name": "romantic-memories-vault",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "homepage": "https://arstate.github.io/web-kenangan-fifa2",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "tsc && vite build",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
-    "react": "^19.1.1",
-    "@google/genai": "^1.15.0",
-    "react-dom": "^19.1.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@google/genai": "^0.1.1"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "gh-pages": "^6.0.0",
+    "tailwindcss": "^3.3.3"
   }
 }
